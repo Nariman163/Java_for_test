@@ -13,7 +13,6 @@ public class Geometry {
         Rectangle.printRectangleArea(3.0, 5.0);
         Rectangle.printRectangleArea(7.0, 9.0);
 
-        Triangle.printPerimetr(5.0,3.0,2.0);
     }
 
 }

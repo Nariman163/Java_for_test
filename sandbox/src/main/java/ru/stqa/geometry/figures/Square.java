@@ -6,7 +6,7 @@ public class Square {
 
     }
 
-    private static double squareArea(double a) {
+    public static double squareArea(double a) {
         return a * a;
     }
 }
