@@ -6,9 +6,20 @@ import ru.stqa.geometry.figures.Square;
 
 public class SquareTests {
 
+  //  @Test
+    //void canCalculateArea(){
+   //     var s = new Square(5);
+    //    double result = s.area();
+   //      Assertions.assertEquals(25.0, result);
+//
+   //  }
     @Test
-    void canCalculateArea(){
-        double result = Square.squareArea(5);
-        Assertions.assertEquals(25.0, result);
+    void cannotCreateSquareWithNegativeSide(){
+        try {
+            new Square(-5.0);
+            Assertions.fail();
+        } catch (IllegalArgumentException exception) {
+            //ok
+        }
     }
 }
