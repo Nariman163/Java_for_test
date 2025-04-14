@@ -6,13 +6,13 @@ public class Hello {
            if (y==0) {
                System.out.println("Делить на ноль запрещено");
            } else {
-               var z = devide(x, y);
+               var z = divide(x, y);
                System.out.println("Hello Nariman!");
            }
 
     }
 
-    private static int devide(int x, int y) {
+    private static int divide(int x, int y) {
         var z = x / y;
         return z;
     }
