@@ -13,4 +13,30 @@ public class TriangleTest {
         Assertions.assertEquals(6.0, result);
     }
 
+    @Test
+    void triangleExistSideA() {
+        try {
+            new Triangle(-3.0, 5.0, 6.0);
+            Assertions.fail();
+        } catch (IllegalArgumentException exeption) {
+        }
+    }
+
+    @Test
+    void triangleExistSideB(){
+        try {
+            new Triangle(3.0, -5.0, 6.0);
+            Assertions.fail();
+        } catch (IllegalArgumentException exeption) {
+        }
+    }
+
+    @Test
+    void triangleExistSideC(){
+        try {
+            new Triangle(3.0, 5.0, -6.0);
+            Assertions.fail();
+        } catch (IllegalArgumentException exeption) {
+        }
+    }
 }
